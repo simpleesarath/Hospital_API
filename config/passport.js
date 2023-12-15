@@ -1,5 +1,5 @@
-const passport = require('passport');
-const Doctor = require('../models/doctor');
+const passport = require('passport');           //import passport
+const Doctor = require('../models/doctor');     //import doctorschema
 
 var JwtStrategy = require('passport-jwt').Strategy,
     ExtractJwt = require('passport-jwt').ExtractJwt;
@@ -23,4 +23,4 @@ passport.use(new JwtStrategy(opts, function(jwt_payload, done) {
     });
 }));
 
-module.exports = passport;
+module.exports = passport;              //exports passport.

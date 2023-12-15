@@ -1,6 +1,6 @@
-const Doctor = require('../models/doctor');
-const Patient = require('../models/Patient');
-const jwt = require('jsonwebtoken');
+const Doctor = require('../models/doctor');         //imported dataschema from models
+const Patient = require('../models/Patient');       
+const jwt = require('jsonwebtoken');                //imported jwt
 
 module.exports.registerDoctor = async(req,res,next)=>{
     try {
@@ -45,7 +45,7 @@ module.exports.login = async (req,res,next) => {
 
 module.exports.registerPatient = async (req,res,next) => {
     try {
-        req.body.doctor = "657b57afcafc35d0da7a14bc";
+        req.body.doctor = "657cadb8dea75df0766316be";
         const patient = await Patient.create(req.body);
 
         res.status(200).json({

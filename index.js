@@ -1,17 +1,17 @@
-const express = require('express');  //importing express;
-const bodyParser = require('body-parser');
-const db = require('./config/database');
-const passport = require('passport');
-const passportStrategy = require('./config/passport');
+const express = require('express');           //importing express;
+const bodyParser = require('body-parser');    //importing body parser
+const db = require('./config/database');      //importing db
+const passport = require('passport');         //importing passport
+const passportStrategy = require('./config/passport');   //importing passportStrategy
 const router = require('./routes/router');
 
-const app = express();
-const PORT = 8000;
+const app = express();            //creating a instance of expressapp
+const PORT = 8000;                //setting port
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(router);
+app.use(router);                 //creating a instance of router
 
 
 app.listen(PORT,(err) => {
