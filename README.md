@@ -2,7 +2,7 @@
 Hospital api fetchhing by postman
 ## Overview
 
-The Hospital API is a backend application designed to manage doctors, patients, and medical reports for a hospital. It provides endpoints for user registration, login, creating medical reports, and retrieving reports.
+The Hospital API is a backend application designed to manage doctors, patients, and medical reports for a hospital. It provides endpoints for user registration, login, creating medical reports, and retrieving reports.nd Notice that the name suggests that its a Hospital_API,So no need to work on UI design nd we can simply verifies the routes using postman
 
 ## Technologies Used
 
